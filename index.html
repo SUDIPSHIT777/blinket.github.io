@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blinket</title>
+    <link rel="stylesheet" href="ELEMENTS/CSS/style.css">
+    <link rel="stylesheet" href="ELEMENTS/CSS/media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="header_left">
+            <div class="logo">
+                <a href="#">
+                    <svg width="134" height="30" viewBox="0 0 114 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M14.3342 7.186C16.2619 7.186 17.9832 7.66644 19.4978 8.62732C21.0262 9.57447 22.2242 10.9197 23.0917 12.663C23.9316 14.3377 24.3516 16.3075 24.3516 18.5724C24.3516 20.7687 23.9316 22.7316 23.0917 24.4612C22.2517 26.1908 21.0675 27.5429 19.5391 28.5175C17.9969 29.5058 16.2619 30 14.3342 30C12.9297 30 11.6078 29.7117 10.3685 29.1352C9.12927 28.5587 8.06901 27.7488 7.18775 26.7056V29.4852H0V0H7.18775V10.4598C8.06901 9.41661 9.12927 8.61359 10.3685 8.05079C11.6078 7.47426 12.9297 7.186 14.3342 7.186ZM12.1861 24.0494C13.2051 24.0494 14.1139 23.8161 14.9125 23.3493C15.7112 22.8826 16.3377 22.2306 16.7921 21.3933C17.2465 20.5697 17.4737 19.6294 17.4737 18.5724C17.4737 17.5429 17.2465 16.6095 16.7921 15.7721C16.3377 14.9348 15.7112 14.2828 14.9125 13.8161C14.1139 13.3493 13.2051 13.116 12.1861 13.116C11.2223 13.116 10.3617 13.3493 9.60432 13.8161C8.84699 14.269 8.2549 14.9073 7.82804 15.731C7.40118 16.5683 7.18775 17.5154 7.18775 18.5724C7.18775 19.6294 7.40118 20.5765 7.82804 21.4139C8.2549 22.2375 8.84699 22.8826 9.60432 23.3493C10.3617 23.8161 11.2223 24.0494 12.1861 24.0494Z"
+                            fill="#F8CB46"></path>
+                        <path d="M25.3356 29.4852V0H32.5233V29.4852H25.3356Z" fill="#F8CB46"></path>
+                        <path d="M34.5607 29.4852V7.68016H41.7071V29.4852H34.5607Z" fill="#F8CB46"></path>
+                        <path
+                            d="M57.2319 7.186C58.7603 7.186 60.1372 7.5429 61.3627 8.25669C62.5882 8.95676 63.5521 9.94509 64.2544 11.2217C64.9291 12.512 65.2664 13.9739 65.2664 15.6074V29.4852H58.4092V17.2135C58.4092 16.4173 58.2508 15.7104 57.9341 15.0927C57.6312 14.4612 57.1974 13.9739 56.6329 13.6307C56.0821 13.2876 55.4349 13.116 54.6914 13.116C53.9891 13.116 53.3419 13.2876 52.7498 13.6307C52.1577 13.9602 51.6965 14.4132 51.366 14.9897C51.0218 15.5388 50.8496 16.1839 50.8496 16.9252L50.8083 29.4852H43.6619V7.68016H50.8083V10.1716C51.483 9.23816 52.3849 8.51064 53.5141 7.98902C54.6432 7.45367 55.8824 7.186 57.2319 7.186Z"
+                            fill="#F8CB46"></path>
+                        <path
+                            d="M81.0597 17.2135L89.1769 29.4852H81.0597L76.3091 21.7639L74.1198 24.2965V29.4852H66.932V0H74.1198V16.2869L81.0184 7.68016H89.1356L81.0597 17.2135Z"
+                            fill="#F8CB46"></path>
+                        <path d="M34.5569 0.00232667H41.7267V5.59207H34.5569V0.00232667Z" fill="#F8CB46"></path>
+                        <path d="M90.3176 29.4198V7.61479H97.464V29.4198H90.3176Z" fill="#54B226"></path>
+                        <path
+                            d="M112.575 23.2634L114 27.855C113.353 28.4727 112.534 28.9737 111.542 29.3581C110.564 29.7424 109.607 29.9346 108.671 29.9346C107.322 29.9346 106.117 29.6395 105.057 29.0492C103.996 28.4452 103.17 27.6079 102.578 26.5372C101.986 25.494 101.69 24.2929 101.69 22.9339V13.3183H98.819V7.61479H101.69V0.00241089H108.547V7.61479H113.071V13.3183H108.547V21.6161C108.547 22.3162 108.733 22.8859 109.105 23.3251C109.477 23.7644 109.952 23.984 110.53 23.984C110.943 23.984 111.329 23.9223 111.687 23.7987C112.045 23.6752 112.341 23.4967 112.575 23.2634Z"
+                            fill="#54B226"></path>
+                        <path d="M90.2609 0.00241089H97.4307V5.59215H90.2609V0.00241089Z" fill="#54B226"></path>
+                    </svg></a>
+            </div>
+            <div class="adderss">
+                <h3>Delivery in 10 minutes</h3>
+                <p>Kolkata, West Bengal, India</p>
+            </div>
+        </div>
+        <form class="header_searchbox">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            <input type="text" placeholder="Search Any Grocery....">
+        </form>
+        <div class="header_btn">
+            <button class="h-btn1">Login</button>
+            <Button class="h-btn2"><i class="fa-solid fa-cart-plus"></i>My Cart</Button>
+        </div>
+    </header>
+    <section class="Banner">
+        <img src="ELEMENTS/IMAGE/Group.webp" alt="Banner">
+    </section>
+    <section class="order-banner">
+        <div class="order_banner_items">
+            <img src="ELEMENTS/IMAGE/img1.avif" alt="">
+        </div>
+        <div class="order_banner_items">
+            <img src="ELEMENTS/IMAGE/img2.avif" alt="">
+        </div>
+        <div class="order_banner_items">
+            <img src="ELEMENTS/IMAGE/img3.avif" alt="">
+        </div>
+    </section>
+    <section class="product_catagory">
+        <div class="pro_items">
+            <img src="ELEMENTS/IMAGE/img4.avif" alt="">
+        </div>
+        <div class="pro_items">
+            <img src="ELEMENTS/IMAGE/img5.avif" alt="">
+        </div>
+        <div class="pro_items">
+            <img src="ELEMENTS/IMAGE/img6.avif" alt="">
+        </div>
+        <div class="pro_items">
+            <img src="ELEMENTS/IMAGE/img7.avif" alt="">
+        </div>
+        <div class="pro_items">
+            <img src="ELEMENTS/IMAGE/img8.avif" alt="">
+        </div>
+        <div class="pro_items">
+            <img src="ELEMENTS/IMAGE/img9.avif" alt="">
+        </div>
+        <div class="pro_items">
+            <img src="ELEMENTS/IMAGE/img10.avif" alt="">
+        </div>
+        <div class="pro_items">
+            <img src="ELEMENTS/IMAGE/img11.avif" alt="">
+        </div>
+        <div class="pro_items">
+            <img src="ELEMENTS/IMAGE/img12.avif" alt="">
+        </div>
+        <div class="pro_items">
+            <img src="ELEMENTS/IMAGE/img13.avif" alt="">
+        </div>
+        <div class="pro_items">
+            <img src="ELEMENTS/IMAGE/img14.avif" alt="">
+        </div>
+        <div class="pro_items">
+            <img src="ELEMENTS/IMAGE/img15.avif" alt="">
+        </div>
+        <div class="pro_items">
+            <img src="ELEMENTS/IMAGE/img16.avif" alt="">
+        </div>
+        <div class="pro_items">
+            <img src="ELEMENTS/IMAGE/img17.avif" alt="">
+        </div>
+        <div class="pro_items">
+            <img src="ELEMENTS/IMAGE/img18.avif" alt="">
+        </div>
+        <div class="pro_items">
+            <img src="ELEMENTS/IMAGE/img19.avif" alt="">
+        </div>
+        <div class="pro_items">
+            <img src="ELEMENTS/IMAGE/img20.avif" alt="">
+        </div>
+        <div class="pro_items">
+            <img src="ELEMENTS/IMAGE/img21.avif" alt="">
+        </div>
+        <div class="pro_items">
+            <img src="ELEMENTS/IMAGE/img22.avif" alt="">
+        </div>
+        <div class="pro_items">
+            <img src="ELEMENTS/IMAGE/img23.avif" alt="">
+        </div>
+    </section>
+    <section class="dairy_product">
+        <div class="product_name">
+            <h2>Dairy, Bread & Eggs</h2>
+            <b>See all</b>
+        </div>
+        <div class="dairy_product_items_section">
+            <div class="dairy_items">
+                <div class="dairy_image">
+                    <img src="ELEMENTS/IMAGE/d1.avif" alt="">
+                </div>
+                <b>Amul Taaza Toned Fresh Milk</b>
+                <p>500 ml</p>
+                <div class="bottom">
+                    <b>₹55</b>
+                    <button>ADD</button>
+                </div>
+            </div>
+            <div class="dairy_items">
+                <div class="dairy_image">
+                    <img src="ELEMENTS/IMAGE/d2.avif" alt="">
+                </div>
+                <b>Amul Masti Pouch Curd 100% pure</b>
+                <p>400 g</p>
+                <div class="bottom">
+                    <b>₹25</b>
+                    <button>ADD</button>
+                </div>
+            </div>
+            <div class="dairy_items">
+                <div class="dairy_image">
+                    <img src="ELEMENTS/IMAGE/d3.avif" alt="">
+                </div>
+                <b>Amul Gold Full Cream Fresh Milk</b>
+                <p>500 ml</p>
+                <div class="bottom">
+                    <b>₹45</b>
+                    <button>ADD</button>
+                </div>
+            </div>
+            <div class="dairy_items">
+                <div class="dairy_image">
+                    <img src="ELEMENTS/IMAGE/d4.avif" alt="">
+                </div>
+                <b>Amul Salted Butter (1 pack) </b>
+                <p>500 ml</p>
+                <div class="bottom">
+                    <b>₹34</b>
+                    <button>ADD</button>
+                </div>
+            </div>
+            <div class="dairy_items">
+                <div class="dairy_image">
+                    <img src="ELEMENTS/IMAGE/d5.avif" alt="">
+                </div>
+                <b>Moreish Classic White Bread</b>
+                <p>400g</p>
+                <div class="bottom">
+                    <b>₹36</b>
+                    <button>ADD</button>
+                </div>
+            </div>
+            <div class="dairy_items">
+                <div class="dairy_image">
+                    <img src="ELEMENTS/IMAGE/d6.avif" alt="">
+                </div>
+                <b>Amul Masti Taaza Toned pouch card</b>
+                <p>200g</p>
+                <div class="bottom">
+                    <b>₹15</b>
+                    <button>ADD</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="dairy_product">
+        <div class="product_name">
+            <h2>Rolling paper & tobacco</h2>
+            <b>See all</b>
+        </div>
+        <div class="dairy_product_items_section">
+            <div class="dairy_items">
+                <div class="dairy_image">
+                    <img src="ELEMENTS/IMAGE/r1.avif" alt="">
+                </div>
+                <b>Brown Rolling Paper (Small) - Stash Pro</b>
+                <p>pack (40 pices)</p>
+                <div class="bottom">
+                    <b>₹155</b>
+                    <button>ADD</button>
+                </div>
+            </div>
+            <div class="dairy_items">
+                <div class="dairy_image">
+                    <img src="ELEMENTS/IMAGE/r2.avif" alt="">
+                </div>
+                <b>hrice a Day Black Edition Rolling paper</b>
+                <p>10 packs</p>
+                <div class="bottom">
+                    <b>₹10</b>
+                    <button>ADD</button>
+                </div>
+            </div>
+            <div class="dairy_items">
+                <div class="dairy_image">
+                    <img src="ELEMENTS/IMAGE/r3.avif" alt="">
+                </div>
+                <b>Perfect Rolled Cones (Natural) - Bongchie</b>
+                <p>3 packs</p>
+                <div class="bottom">
+                    <b>₹45</b>
+                    <button>ADD</button>
+                </div>
+            </div>
+            <div class="dairy_items">
+                <div class="dairy_image">
+                    <img src="ELEMENTS/IMAGE/r4.avif" alt="">
+                </div>
+                <b>Perforated Wide Tips Roach - Raw</b>
+                <p>1 pack(50 pices)</p>
+                <div class="bottom">
+                    <b>₹50</b>
+                    <button>ADD</button>
+                </div>
+            </div>
+            <div class="dairy_items">
+                <div class="dairy_image">
+                    <img src="ELEMENTS/IMAGE/r5.avif" alt="">
+                </div>
+                <b>Black Slim Rolling Paper (King Size) - Raw</b>
+                <p>1 pack(32)</p>
+                <div class="bottom">
+                    <b>₹100</b>
+                    <button>ADD</button>
+                </div>
+            </div>
+            <div class="dairy_items">
+                <div class="dairy_image">
+                    <img src="ELEMENTS/IMAGE/r6.avif" alt="">
+                </div>
+                <b>Metallic Herb Grinder/ Crusher By Outontrip</b>
+                <p>1 unit</p>
+                <div class="bottom">
+                    <b>₹250</b>
+                    <button>ADD</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="dairy_product">
+        <div class="product_name">
+            <h2>Snacks & Munchies</h2>
+            <b>See all</b>
+        </div>
+        <div class="dairy_product_items_section">
+            <div class="dairy_items">
+                <div class="dairy_image">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/4bf93c8a-56bc-487e-9660-cfb4082ccedb.jpg?ts=1723098573"
+                        alt="">
+                </div>
+                <b>Kettle Studio Mature Cheddar Chips</b>
+                <p>113g</p>
+                <div class="bottom">
+                    <b>₹99</b>
+                    <button>ADD</button>
+                </div>
+            </div>
+            <div class="dairy_items">
+                <div class="dairy_image">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/c23856bf-cdf5-475d-9545-023bff8694d3.jpg?ts=1723100848"
+                        alt="">
+                </div>
+                <b>Kab's Jackpot Cheese Balls</b>
+                <p>60g</p>
+                <div class="bottom">
+                    <b>₹65</b>
+                    <button>ADD</button>
+                </div>
+            </div>
+            <div class="dairy_items">
+                <div class="dairy_image">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/5910a45b-a0b6-4487-92cb-d5f449e74db3.jpg"
+                        alt="">
+                </div>
+                <b>Jacker Barbeque Potato Crisps</b>
+                <p>47g</p>
+                <div class="bottom">
+                    <b>₹68 <br><del class="delt">₹70</del></b>
+                    <button>ADD</button>
+                </div>
+            </div>
+            <div class="dairy_items">
+                <div class="dairy_image">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/7dd25b43-94da-42ad-b719-35ad9e395705.jpg?ts=1724850850"
+                        alt="">
+                </div>
+                <b>Kettle Studio Himalayan Potato Chips</b>
+                <p>50g</p>
+                <div class="bottom">
+                    <b>₹55</b>
+                    <button>ADD</button>
+                </div>
+            </div>
+            <div class="dairy_items">
+                <div class="dairy_image">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/bebe562d-c417-465b-9b12-4d612f48d08a.jpg?ts=1723098763"
+                        alt="">
+                </div>
+                <b>Nongshim Shrimp Flavoured chips</b>
+                <p>50g</p>
+                <div class="bottom">
+                    <b>₹55</b>
+                    <button>ADD</button>
+                </div>
+            </div>
+            <div class="dairy_items">
+                <div class="dairy_image">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/6807f54d-f711-49ca-9635-514ac9b72d7f.jpg?ts=1724850859"
+                        alt="">
+                </div>
+                <b>Kettle Studio Sharp Jalapenos</b>
+                <p>50g</p>
+                <div class="bottom">
+                    <b>₹55</b>
+                    <button>ADD</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="dairy_product">
+        <div class="product_name">
+            <h2>Hookah</h2>
+            <b>See all</b>
+        </div>
+        <div class="dairy_product_items_section">
+            <div class="dairy_items">
+                <div class="dairy_image">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/480933a.jpg?ts=1688628164"
+                        alt="">
+                </div>
+                <b>Kiwi Herbal Hookah Flavor (Tobacco Free)</b>
+                <p>50g</p>
+                <div class="bottom">
+                    <b>₹100</b>
+                    <button>ADD</button>
+                </div>
+            </div>
+            <div class="dairy_items">
+                <div class="dairy_image">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/496995a.jpg?ts=1690814532"
+                        alt="">
+                </div>
+                <b>Premium Magic Coal By Stash Pro</b>
+                <p>1 pack</p>
+                <div class="bottom">
+                    <b>₹80</b>
+                    <button>ADD</button>
+                </div>
+            </div>
+            <div class="dairy_items">
+                <div class="dairy_image">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/535602a.jpg?ts=1698309253"
+                        alt="">
+                </div>
+                <b>Flat Coconut Hookah Coal Cubes by Stash Pro</b>
+                <p>30 pices</p>
+                <div class="bottom">
+                    <b>₹150</b>
+                    <button>ADD</button>
+                </div>
+            </div>
+            <div class="dairy_items">
+                <div class="dairy_image">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/e4bfe80f-bc8f-4be3-a5bb-627bb15f72d6.jpg?ts=1736944389"
+                        alt="">
+                </div>
+                <b>Calm-Blueberry Non-Tobacco Herbal Smoking</b>
+                <p>50g</p>
+                <div class="bottom">
+                    <b>₹100</b>
+                    <button>ADD</button>
+                </div>
+            </div>
+            <div class="dairy_items">
+                <div class="dairy_image">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/480935a.jpg?ts=1687523763"
+                        alt="">
+                </div>
+                <b>Paan Raas Herbal Hookah Flavor (Tobacco Free)</b>
+                <p>50g</p>
+                <div class="bottom">
+                    <b>₹100</b>
+                    <button>ADD</button>
+                </div>
+            </div>
+            <div class="dairy_items">
+                <div class="dairy_image">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/535601a.jpg?ts=1698309253"
+                        alt="">
+                </div>
+                <b>Coconut Hookah Coal Cubes by Stash Pro</b>
+                <p>18 pices</p>
+                <div class="bottom">
+                    <b>₹140</b>
+                    <button>ADD</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="dairy_product">
+        <div class="product_name">
+            <h2>Mouth fresheners</h2>
+            <b>See all</b>
+        </div>
+        <div class="dairy_product_items_section">
+            <div class="dairy_items">
+                <div class="dairy_image">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/498984a.jpg?ts=1686566080"
+                        alt="">
+                </div>
+                <b>Spraymintt Icymint Mouth Freshener</b>
+                <p>15 g</p>
+                <div class="bottom">
+                    <b>₹68 <br><del class="delt">₹70</del></b>
+                    <button>ADD</button>
+                </div>
+            </div>
+            <div class="dairy_items">
+                <div class="dairy_image">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/414b16fb-02a9-4780-81ee-5a60e5f4d698.jpg?ts=1726838375"
+                        alt="">
+                </div>
+                <b>Pass Pass Frutti Mix Mouth Freshener</b>
+                <p>105 g</p>
+                <div class="bottom">
+                    <b>₹60 <br><del class="delt">₹80</del></b>
+                    <button>ADD</button>
+                </div>
+            </div>
+            <div class="dairy_items">
+                <div class="dairy_image">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/110259a.jpg?ts=1688469108"
+                        alt="">
+                </div>
+                <b>Pass Pass Minty Mix Mouth Freshener</b>
+                <p>100 g</p>
+                <div class="bottom">
+                    <b>₹60 <br><del class="delt">₹90</del></b>
+                    <button>ADD</button>
+                </div>
+            </div>
+            <div class="dairy_items">
+                <div class="dairy_image">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/a35c4402-2583-4f95-8c0f-8364b83974b0.jpg?ts=1708592508"
+                        alt="">
+                </div>
+                <b>Chandan Mitha Amla Candy</b>
+                <p>100 g</p>
+                <div class="bottom">
+                    <b>₹57</b>
+                    <button>ADD</button>
+                </div>
+            </div>
+            <div class="dairy_items">
+                <div class="dairy_image">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/b06b8269-b0f2-4887-8106-f49d5695fc12.jpg?ts=1720016904"
+                        alt="">
+                </div>
+                <b>GO DESI Meetha Paan Desi Mints</b>
+                <p>1 pices</p>
+                <div class="bottom">
+                    <b>₹80</b>
+                    <button>ADD</button>
+                </div>
+            </div>
+            <div class="dairy_items">
+                <div class="dairy_image">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/163972a.jpg?ts=1690813224"
+                        alt="">
+                </div>
+                <b>Impact Sugar Free Mint Candy (Peach)</b>
+                <p>15 g</p>
+                <div class="bottom">
+                    <b>₹148 <br><del class="delt">₹150</del></b>
+                    <button>ADD</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="dairy_product">
+        <div class="product_name">
+            <h2>Cold Drinks & Juice</h2>
+            <b>See all</b>
+        </div>
+        <div class="dairy_product_items_section">
+            <div class="dairy_items">
+                <div class="dairy_image">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/e69c587d-802a-40eb-a40b-a6bc9623526d.jpg?ts=1707312325"
+                        alt="">
+                </div>
+                <b>Thums Up Soft Drink (750 ml)</b>
+                <p>750 ml</p>
+                <div class="bottom">
+                    <b>₹30</b>
+                    <button>ADD</button>
+                </div>
+            </div>
+            <div class="dairy_items">
+                <div class="dairy_image">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/479526a.jpg?ts=1684993718"
+                        alt="">
+                </div>
+                <b>Ice Cubes by Instant Ice Ice Cubes</b>
+                <p>1kg</p>
+                <div class="bottom">
+                    <b>₹60</b>
+                    <button>ADD</button>
+                </div>
+            </div>
+            <div class="dairy_items">
+                <div class="dairy_image">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/cfeaa68b-2ce1-4c1e-95c5-450bbb9bb281.jpg?ts=1708591243"
+                        alt="">
+                </div>
+                <b>Limca Lemon 'N' Lime Soft Drink 750 ml </b>
+                <p>750 ml</p>
+                <div class="bottom">
+                    <b>₹30</b>
+                    <button>ADD</button>
+                </div>
+            </div>
+            <div class="dairy_items">
+                <div class="dairy_image">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/9a7f01e0-e63e-407e-bfc9-449c165f7a1c.jpg?ts=1728051043"
+                        alt="">
+                </div>
+                <b>Frooti Mango Drink Lime Soft</b>
+                <p>125 ml</p>
+                <div class="bottom">
+                    <b>₹10</b>
+                    <button>ADD</button>
+                </div>
+            </div>
+            <div class="dairy_items">
+                <div class="dairy_image">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/e24eda9c-3cc7-4e66-bc2b-80383eb85a80.jpg?ts=1715152398"
+                        alt="">
+                </div>
+                <b>Sprite Lime Flavored Soft Drink 750 ml</b>
+                <p>750 ml</p>
+                <div class="bottom">
+                    <b>₹40</b>
+                    <button>ADD</button>
+                </div>
+            </div>
+            <div class="dairy_items">
+                <div class="dairy_image">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/175086a.jpg?ts=1688469114"
+                        alt="">
+                </div>
+                <b>Amul Taaza Toned Fresh Milk</b>
+                <p>500 ml</p>
+                <div class="bottom">
+                    <b>₹25</b>
+                    <button>ADD</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="dairy_product">
+        <div class="product_name">
+            <h2>Candies & Gums</h2>
+            <b>See all</b>
+        </div>
+        <div class="dairy_product_items_section">
+            <div class="dairy_items">
+                <div class="dairy_image">
+                    <img class="del"
+                        src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/011c5a97-354e-4ef5-8852-bcb6bed82a2b.jpg?ts=1720016768"
+                        alt="">
+                </div>
+                <b>GO DESI Tangy Imli Desi Popz Lollipop Candy</b>
+                <p>113 g</p>
+                <div class="bottom">
+                    <b>₹99</b>
+                    <button>ADD</button>
+                </div>
+            </div>
+            <div class="dairy_items">
+                <div class="dairy_image">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/b8760532-ff5b-4451-aacf-8037ec6da880.jpg?ts=1732624518"
+                        alt="">
+                </div>
+                <b>Chupa Chups Sour Bites Mixed Fruit Candy</b>
+                <p>60 picess</p>
+                <div class="bottom">
+                    <b>₹35</b>
+                    <button>ADD</button>
+                </div>
+            </div>
+            <div class="dairy_items">
+                <div class="dairy_image">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/5cf43365-0827-4882-bcb3-19e611e5e1a9.jpg?ts=1735822670"
+                        alt="">
+                </div>
+                <b>Dabur Hajmola Regular Digestive Tablets</b>
+                <p>120 pices</p>
+                <div class="bottom">
+                    <b>₹68 <br><del class="delt">₹70</del></b>
+                    <button>ADD</button>
+                </div>
+            </div>
+            <div class="dairy_items">
+                <div class="dairy_image">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/0cdb751e-a797-4f76-ba3d-00a4c6130c19.jpg?ts=1710154019"
+                        alt="">
+                </div>
+                <b>Happydent Wave Sugarfree Mint Chewing Gum</b>
+                <p>148 g</p>
+                <div class="bottom">
+                    <b>₹48 <br><del class="delt">₹60</del></b>
+                    <button>ADD</button>
+                </div>
+            </div>
+            <div class="dairy_items">
+                <div class="dairy_image">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/18bb0b76-c636-4bd1-8ea8-a5ac84f3520a.jpg?ts=1732624516"
+                        alt="">
+                </div>
+                <b>Alpenliebe Juzt Jelly - Strawberry Candy</b>
+                <p>190 g</p>
+                <div class="bottom">
+                    <b>₹56 <br><del class="delt">₹60</del></b>
+                    <button>ADD</button>
+                </div>
+            </div>
+            <div class="dairy_items">
+                <div class="dairy_image">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/aa4c477e-08d8-479d-be21-76e061e13c0d.jpg?ts=1718169096"
+                        alt="">
+                </div>
+                <b>Pulse Kachcha Aam / Mango Candy</b>
+                <p>500 g</p>
+                <div class="bottom">
+                    <b>₹55 <br><del class="delt">₹75</del></b>
+                    <button>ADD</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer part -->
+    <footer class="main_footer">
+        <div class="footer_header">
+            <h3>Useful Links</h3>
+            <h3 class="h3">Categories see all</h3>
+        </div>
+        <div class="footer">
+            <div class="footer_left">
+                <div class="about_box">
+                    <a href="#">
+                        <ul>
+                            <ol>About</ol>
+                            <ol>Careers</ol>
+                            <ol>Blog</ol>
+                            <ol>Press</ol>
+                            <ol>Lead</ol>
+                            <ol>Value</ol>
+                        </ul>
+                    </a>
+                </div>
+                <div class="about_box">
+                    <a href="#">
+                        <ul>
+                            <ol>Privacy</ol>
+                            <ol>Terms</ol>
+                            <ol>FAQs</ol>
+                            <ol>Security</ol>
+                            <ol>Mobile</ol>
+                            <ol>Contact</ol>
+                        </ul>
+                    </a>
+                </div>
+                <div class="about_box">
+                    <a href="#">
+                        <ul>
+                            <ol>Partner</ol>
+                            <ol>Franchise</ol>
+                            <ol>Seller</ol>
+                            <ol>Warehouse</ol>
+                            <ol>Deliver</ol>
+                            <ol>Resources</ol>
+                        </ul>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer_right">
+                <div class="about_box">
+                    <a href="#">
+                        <ul>
+                            <ol>Vegetables & Fruits</ol>
+                            <ol>Cold Drinks & Juices</ol>
+                            <ol>Bakery & Biscuits</ol>
+                            <ol>Dry Fruits, Masala & Oil</ol>
+                            <ol>Paan Corner</ol>
+                            <ol>Pharma & Wellness</ol>
+                            <ol>Ice Creams & Frozen Desserts</ol>
+                            <ol>Beauty & Cosmetics</ol>
+                            <ol>Electronics & Electricals</ol>
+                            <ol>Toys & Games</ol>
+                        </ul>
+                    </a>
+                </div>
+                <div class="about_box">
+                    <a href="#">
+                        <ul>
+                            <ol>Dairy & Breakfast</ol>
+                            <ol>Instant & Frozen Food</ol>
+                            <ol>Sweet Tooth</ol>
+                            <ol>Sauces & Spreads</ol>
+                            <ol>Organic & Premium</ol>
+                            <ol>Cleaning Essentials</ol>
+                            <ol>Personal Care</ol>
+                            <ol>Magazines</ol>
+                            <ol>Stationery Needs</ol>
+                            <ol>Print Store</ol>
+                        </ul>
+                    </a>
+                </div>
+                <div class="about_box">
+                    <a href="#">
+                        <ul>
+                            <ol>Dairy & Breakfast</ol>
+                            <ol>Instant & Frozen Food</ol>
+                            <ol>Sweet Tooth</ol>
+                            <ol>Sauces & Spreads</ol>
+                            <ol>Organic & Premium</ol>
+                            <ol>Cleaning Essentials</ol>
+                            <ol>Personal Care</ol>
+                            <ol>Magazines</ol>
+                            <ol>Stationery Needs</ol>
+                            <ol>Print Store</ol>
+                        </ul>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <section>
+        <div class="contact">
+            <div class="contect_rebon">
+                <p>&copy;Blink Commerce Private Limited, 2016-2025</p>
+            </div>
+            <p class="p">Download App</p>
+            <div class="contect_rebon">
+
+                <img src="https://blinkit.com/d61019073b700ca49d22.png" width="25%" alt="">
+                <img src="https://blinkit.com/8ed033800ea38f24c4f0.png" width="25%" alt="">
+            </div>
+            <div class="contect_rebon">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-square-threads"></i>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
