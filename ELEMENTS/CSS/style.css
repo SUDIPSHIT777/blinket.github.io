@@ -11,7 +11,6 @@ header {
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
     align-items: center;
-    gap: 40px;
     background-color: white;
 }
 
@@ -150,7 +149,6 @@ i {
 .dairy_product_items_section {
     display: flex;
     padding: 10px;
-    flex-basis: 15%;
     gap: 20px;
 }
 
@@ -273,4 +271,7 @@ i {
 
 .p {
     padding-left: 100px;
+}
+.cata{
+    display: none;
 }
