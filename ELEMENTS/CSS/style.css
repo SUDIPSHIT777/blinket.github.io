@@ -206,9 +206,12 @@ i {
 
 
 /* Footer Part */
-.footer {
+.main_footer{
+    max-width: 1280px;
     max-width: 1280px;
     margin: auto;
+}
+.footer {
     display: flex;
 }
 
